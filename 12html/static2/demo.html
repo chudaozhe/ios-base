@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>List</title>
+        <link rel="stylesheet" type="text/css" href="css/prism.css">
+        <script type="text/javascript" src="js/prism.js"></script>
+    </head>
+    <body>
+        <pre><code class="language-php">$file = &#039;e:/hehe.txt&#039;;
+$handle = fopen($file, &quot;r&quot;);
+//取文件内容的最后10个字节
+//回车算2个字节
+fseek($handle, -10, SEEK_END);
+// echo ftell($handle);
+echo fread($handle, 10);
+fclose($handle);</code></pre>
+    </body>
+</html>
